@@ -96,6 +96,128 @@ An Entity Relationship Diagram (ERD) is provided in the `/docs` folder.
 
 ---
 
-## 🔌 REST API Overview
+🔌 REST API Overview
+Authentication
+POST /api/login
 
-### Authentication
+
+Authenticates users and returns an access token
+
+Products
+GET /api/products
+
+
+Retrieves the list of products
+
+Sales
+POST /api/sales
+
+
+Records a sales transaction
+
+Automatically updates product stock
+
+Reports
+GET /api/reports/daily
+
+
+Returns daily sales summary
+
+Accessible by Admin and Manager roles only
+
+GET /api/reports/monthly
+
+
+Returns monthly sales summary
+
+Accessible by Admin and Manager roles only
+
+GET /api/reports/low-stock
+
+
+Returns products below the stock threshold
+
+Accessible by Admin and Manager roles only
+
+All API endpoints:
+
+Return JSON responses
+
+Require authentication tokens
+
+Enforce role-based permissions
+
+⚙️ Installation & Setup
+Requirements
+
+PHP 8+
+
+MySQL
+
+Composer
+
+Apache or Nginx
+
+Setup Steps
+
+Clone the repository
+
+git clone https://github.com/yourusername/inventory-sales-ci4.git
+
+
+Navigate to the project directory
+
+cd inventory-sales-ci4
+
+
+Copy environment configuration
+
+cp env .env
+
+
+Update .env with database credentials
+
+Create the database
+
+Run migrations
+
+php spark migrate
+
+
+Start the development server
+
+php spark serve
+
+🔐 Security Considerations
+
+Passwords are securely hashed
+
+Role-based access control (RBAC) is enforced
+
+Server-side input validation is applied
+
+Critical operations use database transactions
+
+API endpoints are protected with authentication tokens
+
+📈 Future Improvements
+
+POS system integration
+
+Mobile application support
+
+Advanced analytics and reporting
+
+Performance optimization and caching
+
+CI/CD pipeline implementation
+
+👨‍💻 Author
+
+Christian Augustus Jimenez
+Computer Engineering Graduate
+Aspiring Software Developer / Cybersecurity Professional
+
+📄 License
+
+This project is for educational and portfolio purposes only.
