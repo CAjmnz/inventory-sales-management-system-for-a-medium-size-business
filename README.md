@@ -96,7 +96,7 @@ An Entity Relationship Diagram (ERD) is provided in the `/docs` folder.
 
 ---
 
-🔌 REST API Overview
+##🔌 REST API Overview
 Authentication
 POST /api/login
 
@@ -147,7 +147,7 @@ Require authentication tokens
 
 Enforce role-based permissions
 
-⚙️ Installation & Setup
+##⚙️ Installation & Setup
 Requirements
 
 PHP 8+
